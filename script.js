@@ -39,4 +39,11 @@ function resizeCanvas() {
   generateCanvas(newDimension);
 }
 
+function clearCanvas() {
+  const boxes = elementGrid.querySelectorAll('.box');
+  for (const box of boxes) {
+    box.style.backgroundColor = 'white';
+  }
+}
+
 generateCanvas(dimension);
