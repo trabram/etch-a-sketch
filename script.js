@@ -86,7 +86,7 @@ function changePen(mode) {
 
   if (mode == 1) elementMode.innerText = 'Black';
   if (mode == 2) elementMode.innerText = 'Random';
-  if (mode == 3) elementMode.innerText = 'Gradient';
+  if (mode == 3) elementMode.innerText = 'Darken';
   penMode = mode;
 }
 
