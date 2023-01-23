@@ -1,5 +1,5 @@
 // height x width of canvas
-let dimension = 8;
+let dimension = 16;
 
 // get canvas element
 let elementGrid = document.querySelector('.grid');
@@ -16,6 +16,9 @@ for (let index = 0; index < dimension; index++) {
     let elementBox = document.createElement("div");
     elementBox.classList.add('box');
     elementRow.appendChild(elementBox);
+
+    // draw on mouse hover
+    elementBox.onmouseover = (e) => e.target.style.backgroundColor = 'black';
   }
   
   // append row to canvas
