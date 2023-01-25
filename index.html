@@ -5,11 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Playball&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Concert+One&family=Fugaz+One&display=swap" rel="stylesheet">
 
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"> -->
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fugaz+One&display=swap" rel="stylesheet">
-  
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
   
@@ -30,19 +27,17 @@
     -->
   </div>
 
-  <p style="text-align: center;" hidden>Pen Mode : <span class="penmode">Black</span></p>
-
   <div class="controls">
     <div class="controls__dial"></div>
     <div class="controls__buttons">
       <div class="controls__section">
-        <button onclick="resizeCanvas()">Resize</button>
-        <button onclick="clearCanvas()">Clear</button>
+        <button class="controls__btn active" onclick="changePen(this, 1)">Black</button>
+        <button class="controls__btn" onclick="changePen(this, 2)">Random</button>
+        <button class="controls__btn" onclick="changePen(this, 3)">Darken</button>
       </div>
       <div class="controls__section">
-        <button onclick="changePen(1)">Black</button>
-        <button onclick="changePen(2)">Random</button>
-        <button onclick="changePen(3)">Darken</button>
+        <button class="controls__btn btn--normal" onclick="resizeCanvas()">Resize</button>
+        <button class="controls__btn btn--normal" onclick="clearCanvas()">Clear</button>
       </div>
     </div>
     <div class="controls__dial"></div>

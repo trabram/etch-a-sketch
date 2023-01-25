@@ -81,13 +81,13 @@ function clearCanvas() {
   }
 }
 
-function changePen(mode) {
-  const elementMode = document.querySelector('.penmode');
-
-  if (mode == 1) elementMode.innerText = 'Black';
-  if (mode == 2) elementMode.innerText = 'Random';
-  if (mode == 3) elementMode.innerText = 'Darken';
+function changePen(element, mode) {
   penMode = mode;
+
+  // set active button indicator
+  const buttons = document.querySelectorAll('.controls__btn:not(.btn--normal)');
+  buttons.forEach(e => e.classList.remove('active'));
+  element.classList.add('active');
 }
 
 generateCanvas(dimension);

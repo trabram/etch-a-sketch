@@ -33,7 +33,7 @@
 /*** PAGE ***/
 
 body {
-  background-color: #d62828;
+  background-color: #d00000;
   padding: 1rem;
 }
 
@@ -43,7 +43,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  color: #fcbf49;
+  color: #faa307;
 
   margin-bottom: 2rem;
 }
@@ -69,7 +69,6 @@ body {
   width: 640px;
 
   display: flex;
-  /* gap: 1rem; */
   justify-content: space-between;
   align-items: center;
 
@@ -89,4 +88,54 @@ body {
   height: 120px;
   border-radius: 50%;
   background-color: #ffffff;
+}
+
+.controls__section {
+  width: 100%;
+  
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+
+.controls__btn {
+  height: 40px;
+  width: 96px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Concert One', cursive;
+  font-size: 1rem;
+
+  color: hsla(0, 0%, 100%, 0.7);
+  background-color: hsla(0, 0%, 0%, 0.05);
+
+  border: 0;
+  border-radius: 6px;
+
+  padding: 6px;
+}
+
+.controls__btn.active {
+  color: hsla(0, 0%, 100%, 0.9);
+  background-color: hsla(0, 0%, 0%, 0.2);
+}
+
+.controls__btn:not(.active):hover {
+  background-color: hsla(0, 0%, 0%, 0.1);
+}
+
+.btn--normal {
+  color: #000000;
+  background-color: #faa307;
+  border: 4px solid #e85d04 ;
+  border-radius: 20px;
+}
+
+.btn--normal:hover {
+  background-color: #ffba08 !important; 
+  border-radius: 20px;
 }
