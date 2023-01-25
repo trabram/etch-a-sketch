@@ -77,7 +77,7 @@ function resizeCanvas() {
 function clearCanvas() {
   const boxes = elementGrid.querySelectorAll('.box');
   for (const box of boxes) {
-    box.style.backgroundColor = 'white';
+    box.style.backgroundColor = 'rgb(255, 255, 255)';
   }
 }
 
