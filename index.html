@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Playball&display=swap" rel="stylesheet"> -->
+
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fugaz+One&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
@@ -11,10 +16,11 @@
   <title>Etch A Sketch</title>
 </head>
 <body>
-  <h1>Etch A Sketch</h1>
-
-  <button onclick="resizeCanvas()">Resize</button>
-  <button onclick="clearCanvas()">Clear</button>
+  <div class="title">
+    <h1 class="title__small">Magic</h1>
+    <h1 class="title__big">Etch A Sketch</h1>
+    <h1 class="title__small">Screen</h1>
+  </div>
   
   <div class="grid">
     <!-- 
@@ -24,9 +30,23 @@
     -->
   </div>
 
-  <p>Pen Mode : <span class="penmode">Black</span></p>
-  <button onclick="changePen(1)">Black</button>
-  <button onclick="changePen(2)">Random</button>
-  <button onclick="changePen(3)">Darken</button>
+  <p style="text-align: center;" hidden>Pen Mode : <span class="penmode">Black</span></p>
+
+  <div class="controls">
+    <div class="controls__dial"></div>
+    <div class="controls__buttons">
+      <div class="controls__section">
+        <button onclick="resizeCanvas()">Resize</button>
+        <button onclick="clearCanvas()">Clear</button>
+      </div>
+      <div class="controls__section">
+        <button onclick="changePen(1)">Black</button>
+        <button onclick="changePen(2)">Random</button>
+        <button onclick="changePen(3)">Darken</button>
+      </div>
+    </div>
+    <div class="controls__dial"></div>
+  </div>
+
 </body>
 </html>

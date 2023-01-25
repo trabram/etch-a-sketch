@@ -1,9 +1,13 @@
+/*** CANVAS ***/
+
 .grid {
-  width: 720px;
-  height: 720px;
+  width: 640px;
+  height: 640px;
 
   display: flex;
   flex-direction: column;
+
+  margin: auto;
 }
 
 .row {
@@ -24,4 +28,65 @@
 
 .box:last-child {
   border-right: 0;
+}
+
+/*** PAGE ***/
+
+body {
+  background-color: #d62828;
+  padding: 1rem;
+}
+
+.title {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+
+  color: #fcbf49;
+
+  margin-bottom: 2rem;
+}
+
+.title > h1 {
+  display: inline;
+  margin: 0;
+}
+
+.title__big {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: normal;
+  font-size: 3.6rem;
+}
+
+.title__small {
+  font-family: 'Fugaz One', cursive;
+  font-weight: normal;
+  transform: translateY(5px);
+}
+
+.controls {
+  width: 640px;
+
+  display: flex;
+  /* gap: 1rem; */
+  justify-content: space-between;
+  align-items: center;
+
+  margin-inline: auto;
+  margin-block: 2rem;
+}
+
+.controls__buttons {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls__dial {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #ffffff;
 }
