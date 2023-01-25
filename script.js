@@ -1,4 +1,4 @@
-let dimension = 16;   // canvas height x width
+let dimension = 32;   // canvas height x width
 let penMode   = 1;    // default pen mode
 
 // get canvas element
